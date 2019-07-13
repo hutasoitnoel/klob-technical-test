@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1</title>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <div id="grey" style="background-color: grey; text-align: center; height: 100vh; width: 100wv">
+        <h1 style="margin: 0">DIV 1</h1>
+        <div id="orange" style="margin: 5% auto; background-color: orange; text-align: center; height: 70%; width: 80%;">
+            <h1 style="margin: 0">DIV 2</h1>
+            <div id="green"
+                style="margin: 5% auto; background-color: green; text-align: center; height: 70%; width: 80%;">
+                <h1 style="margin: 0">DIV 3</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const greyDiv = document.getElementById('grey');
+    greyDiv.onclick = function (e) {
+        if (e.target !== this) return;
+        alert("DIV 1")
+    }
+
+    const orangeDiv = document.getElementById('orange');
+    orangeDiv.onclick = function (e) {
+        if (e.target !== this) return;
+        alert("DIV 2")
+    }
+
+
+    const greenDiv = document.getElementById('green');
+    greenDiv.onclick = function (e) {
+        if (e.target !== this) return;
+        alert("DIV 3")
+    }
+</script>
+
+</html>
